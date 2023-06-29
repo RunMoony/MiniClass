@@ -18,22 +18,11 @@
 ![add_todo](https://user-images.githubusercontent.com/66777885/101209314-e2166b80-36b6-11eb-8a06-7a978430780c.gif)
 
 하단의 EditText에 내용을 입력 후 '추가' Button을 누르면 viewModel객체 내의 MutableLiveData의 value의 값이 변경되도록 설정했습니다.
-
-#### 상세보기 (상세설정)<br>
-![detail](https://user-images.githubusercontent.com/66777885/101209361-f35f7800-36b6-11eb-84a2-f47cdc75f189.gif)
-
-RecyclerView의 item이 클릭되면 Adapter로 전달된 goToDeatil메서드가 실행되고</br>
-bundle에 Serializable을 구현한 Todo객체를 넣어줍니다.</br>
-DetailActivity에서 Todo객체를 받아와 처리하는 방식으로 진행했습니다.</br>
-
     
 #### 완료하기<br>
 ![done](https://user-images.githubusercontent.com/66777885/101209386-fc504980-36b6-11eb-8116-35c7ec8a590e.gif)
 
 CheckBox 체크 시 isChecked의 값을 todo.isDone 넣어주고, todo.isDone의 값에 따라 취소선(-)이 표시되게 하였습니다.
-
-#### 삭제하기<br>
-![delete](https://user-images.githubusercontent.com/66777885/101209400-01ad9400-36b7-11eb-8da9-e15855ac9207.gif)
 
 'X'버튼을 통해 삭제하거나 menu의 완료 삭제를 통해 삭제를 합니다.
 todoDao의 delete 메서드를 통해 삭제하는 방식으로 진행하였습니다.
