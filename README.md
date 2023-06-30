@@ -11,18 +11,15 @@
 새로운 언어를 습득하기 위한 가장 좋은 토이프로젝트가 TodoList 라 생각해서 구현하였습니다.
 
 ## 순서
-- 0. 완성 화면
 - 1. 사용한 개념 및 기능
 - 2. 느낀점
 
-### 완성화면
-#### 할 일 추가<br>
-![add_todo](https://user-images.githubusercontent.com/66777885/101209314-e2166b80-36b6-11eb-8a06-7a978430780c.gif)
+#### 추가하기<br>
 
 하단의 EditText에 내용을 입력 후 '추가' Button을 누르면 viewModel객체 내의 MutableLiveData의 value의 값이 변경되도록 설정했습니다.
     
 #### 완료하기<br>
-![done](https://user-images.githubusercontent.com/66777885/101209386-fc504980-36b6-11eb-8116-35c7ec8a590e.gif)
+
 
 CheckBox 체크 시 isChecked의 값을 todo.isDone 넣어주고, todo.isDone의 값에 따라 취소선(-)이 표시되게 하였습니다.
 
@@ -30,7 +27,6 @@ CheckBox 체크 시 isChecked의 값을 todo.isDone 넣어주고, todo.isDone의
 todoDao의 delete 메서드를 통해 삭제하는 방식으로 진행하였습니다.
 
 #### 검색하기<br>
-![search](https://user-images.githubusercontent.com/66777885/101209423-0bcf9280-36b7-11eb-9b7a-4038187a664d.gif)
 
 <pre><code>
 TodoDao.kt
@@ -75,7 +71,6 @@ Room의 Query어노테이션의 속성에 query문을 넣어주었고, getTodosB
 
 
 #### 정렬하기<br>
-![sort](https://user-images.githubusercontent.com/66777885/101209430-112cdd00-36b7-11eb-9540-ca62c1911c1d.gif)
 
 메뉴의 등록일 순 얻기는 Todo객체의 PrimaryKey인 registerTime: Long 객체로 Todo객체가 생성될 때</br>
 System.currentTimeMills()를 얻습니다.</br>
